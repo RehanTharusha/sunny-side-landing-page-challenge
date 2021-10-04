@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,7 +5,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="stylesheet" href="Styles.css">
+  <link rel="stylesheet" href="styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +18,12 @@
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
 </head>
+
+
+
+
+
+
 <body>
 
 <header>
@@ -28,13 +33,29 @@
   </svg>
 </div>
 
-  <ul>
+  <ul class="desktop-nav">
     <li><a href="">About</a></li>
     <li><a href="">Services</a></li>
     <li><a href=""> Projects</a></li>
     <a class="contact" href="">Contact</a>
   </ul>
+
+  <div class="mobile-header" id="hamburger">
+    <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF" fill-rule="evenodd"/></svg>
+  </div>
+
 </header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-container">
+    <ul>
+      <li><a href="">About</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href=""> Projects</a></li>
+      <a class="contact" href="">Contact</a>
+    </ul>
+  </div>
+</div>
 
 <div class="parent">  <!-- This is the grid section --> 
 
@@ -45,19 +66,22 @@
     <img src="images/icon-arrow-down.svg" alt="">
   </div>
 
-  
+<div class="container">
   <div class="textBlock1"> 
     <h1>Transform your <br> brand</h1>
     
     <p>
-      We are a full-service creative agency specializing in <br> helping brands grow fast. 
-      Engage your clients through <br> compelling visuals that do most of the marketing for you.
+      We are a full-service creative agency specializing in helping brands grow fast. 
+      Engage your clients through compelling visuals that do most of the marketing for you.
     </p>
 
     <a href="">Learn More</a>
 
   </div>
 
+  <div class="mobileImage"></div> 
+  
+</div>
 
   <div class="gridImage1"></div> 
 
@@ -69,8 +93,8 @@
     <h1>Standout to the right <br> audience</h1>
     
     <p>
-      Using a collaborative formula of designers, researchers, <br> 
-      photographers, videographers, and copywriters, we’ll <br> build and extend your brand in digital places.
+      Using a collaborative formula of designers, researchers,
+      photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
     </p>
 
     <a href="">Learn More</a>
@@ -78,12 +102,15 @@
 
 
   <div class="gridImage3">
+    
+    <div class="imageText">
+      <h1>Graphic design</h1>
 
-    <h1>Graphic design</h1>
-
-    <p>
-      Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-    </p>
+      <p>
+        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+      </p>
+    </div>
+    
   </div>
 
 
@@ -93,6 +120,7 @@
     <p>
       Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
     </p>
+    
   </div>
 
 
@@ -192,17 +220,15 @@
   </ul>
 
   <ul class="socials">
-    <li><a href=""><img src="images/icon-facebook.svg" alt=""></a></li>
-    <li><a href=""><img src="images/icon-instagram.svg" alt=""></a></li>
-    <li><a href=""><img src="images/icon-twitter.svg" alt=""></a></li>
-    <li><a href=""><img src="images/icon-pinterest.svg" alt=""></a></li>
+    <li><a href=""><img src="Images/icon-facebook.svg" alt=""></a></li>
+    <li><a href=""><img src="Images/icon-instagram.svg" alt=""></a></li>
+    <li><a href=""><img src="Images/icon-twitter.svg" alt=""></a></li>
+    <li><a href=""><img src="Images/icon-pinterest.svg" alt=""></a></li>
   </ul>
-
-  
-
 
 </footer>
 
+<script src="main.js"></script>
 
 </body>
 </html>
